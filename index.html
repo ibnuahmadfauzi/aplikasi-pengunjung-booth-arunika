@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buku Tamu</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+
+    <!-- SweetAlert -->
+    <link rel="stylesheet" href="assets/sweetalert2/sweetalert2.min.css" />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div class="guest-page">
+      <div class="image-container">
+        <img src="assets/images/hero-image.png" alt="Arunika Corp" />
+      </div>
+      <div class="form-container">
+        <div class="form-header">
+          <img src="assets/images/logo.png" alt="Arunika Corp" />
+          <h1>Data Pengunjung</h1>
+        </div>
+        <div class="form-list">
+          <form id="guest-form">
+            <div class="mb-3">
+              <label for="guest-name" class="form-label">Nama :</label>
+              <input
+                type="text"
+                id="guest-name"
+                class="form-control"
+                placeholder="..."
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="guest-gender" class="form-label">Gender :</label>
+              <select name="" id="guest-gender" class="form-select" required>
+                <option>pilih gender</option>
+                <option value="Laki-Laki">Laki-Laki</option>
+                <option value="Perempuan">Perempuan</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="guest-position" class="form-label">Jabatan :</label>
+              <input
+                type="text"
+                id="guest-position"
+                class="form-control"
+                placeholder="..."
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="guest-address" class="form-label">Alamat :</label>
+              <textarea
+                id="guest-address"
+                rows="3"
+                class="form-control"
+                placeholder="..."
+                required
+              ></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="guest-phone" class="form-label">No HP :</label>
+              <div class="input-group">
+                <span class="input-group-text">+62</span>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="guest-phone"
+                  placeholder="85XXXXXXXXX"
+                  required
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="guest-email" class="form-label">Email :</label>
+              <input
+                type="email"
+                id="guest-email"
+                class="form-control"
+                placeholder="..."
+                required
+              />
+            </div>
+            <div class="mb-5">
+              <label for="guest-instansi" class="form-label"
+                >Instansi / Universitas :</label
+              >
+              <input
+                type="text"
+                id="guest-instansi"
+                class="form-control"
+                placeholder="..."
+                required
+              />
+            </div>
+            <div>
+              <button type="reset" class="btn btn-secondary text-light px-4">
+                Hapus
+              </button>
+              <button type="submit" class="btn btn-primary text-light px-4">
+                Simpan
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="assets/jquery/jquery-3.7.1.slim.min.js"></script>
+
+    <!-- SweetAlert -->
+    <script src="assets/sweetalert2/sweetalert2.min.js"></script>
+
+    <!-- JS File -->
+    <script src="assets/scripts/script.js"></script>
+  </body>
+</html>
