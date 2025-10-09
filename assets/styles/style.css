@@ -10,6 +10,14 @@ body {
   padding: 0;
   color: #373737;
   box-sizing: border-box;
+  background-image: url(../images/bg.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 400px;
+}
+.form-control,
+.form-select {
+  background-color: #37373700;
 }
 
 /* style for guest page */
@@ -53,4 +61,15 @@ body {
   object-fit: cover;
   object-position: center;
   border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .guest-page .image-container {
+    display: none;
+  }
+
+  .guest-page .form-container {
+    width: 100%;
+  }
 }
