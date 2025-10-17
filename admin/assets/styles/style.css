@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../../../assets/fonts/Poppins-Regular.ttf") format("woff2");
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.login-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.login-image img {
+  height: 80px;
+}

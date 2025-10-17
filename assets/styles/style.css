@@ -10,10 +10,6 @@ body {
   padding: 0;
   color: #373737;
   box-sizing: border-box;
-  background-image: url(../images/bg.png);
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-size: 400px;
 }
 .form-control,
 .form-select {
@@ -25,9 +21,15 @@ body {
   display: flex;
 }
 .guest-page .form-container {
-  width: 50%;
+  width: 65%;
   height: 100vh;
-  overflow-y: auto;
+
+  background-image: url(../images/atas.png), url(../images/bawah.png),
+    url(../images/bulat.png);
+  background-position: right top, left bottom, left top;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 600px, 500px, 700px;
+  background-position-x: 500px, 0px, -200px;
 }
 .guest-page .form-container .form-header {
   text-align: center;
@@ -49,18 +51,48 @@ body {
   margin: 50px;
 }
 .guest-page .image-container {
-  width: 50%;
+  width: 35%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(1, 44, 99, 0.95);
+  color: #ffffff;
+
+  background-image: url(../images/bg-brand-1.png), url(../images/bg-brand-2.png);
+  background-position: left top, right bottom, left top;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 400px, 400px;
 }
-.guest-page .image-container img {
-  width: 90%;
-  height: 90%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 10px;
+.guest-page .image-container .container-logo-brand {
+  display: flex;
+  justify-content: center;
+}
+.guest-page .image-container .logo-brand {
+  max-width: 300px;
+}
+.guest-page .image-container .logo-brand-text img {
+  width: 350px;
+}
+.guest-page .image-container .logo-bu {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+.guest-page .image-container .logo-bu img {
+  max-width: 150px;
+}
+
+#guest-form {
+  background-color: #ffffffcb;
+  padding: 20px;
+  border-radius: 20px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+#guest-form label {
+  font-weight: 700;
+  font-size: 18px;
 }
 
 /* Responsive */
@@ -71,5 +103,23 @@ body {
 
   .guest-page .form-container {
     width: 100%;
+  }
+  #guest-form {
+    max-height: 1500px;
+  }
+  #guest-form input {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #guest-form label {
+    font-size: 22px;
+  }
+  .guest-page .form-container {
+    background-image: url(../images/atas.png), url(../images/bawah.png),
+      url(../images/bulat.png);
+    background-position: right top, left bottom, left top;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 600px, 800px, 700px;
+    background-position-x: 500px, 0px, -200px;
   }
 }

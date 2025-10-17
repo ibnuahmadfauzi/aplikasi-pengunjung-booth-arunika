@@ -72,6 +72,14 @@ $(document).ready(function () {
       icon: "success",
       confirmButtonText: "Tutup",
     });
+
+    $("#guest-name").val(""),
+      $("#guest-gender").val(""),
+      $("#guest-position").val(""),
+      $("#guest-address").val(""),
+      $("#guest-phone").val(""),
+      $("#guest-email").val(""),
+      $("#guest-instansi").val("");
   });
 
   function tampilkanTamu() {

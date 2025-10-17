@@ -17,14 +17,30 @@
   <body>
     <div class="guest-page">
       <div class="image-container">
-        <img src="assets/images/hero-image.png" alt="Arunika Corp" />
+        <div>
+          <div class="container-logo-brand">
+            <img
+              src="assets/images/white-arunika.png"
+              class="logo-brand mb-5"
+              alt="Arunika Corp"
+            />
+          </div>
+          <h3 class="text-center fw-bold">Selamat Datang</h3>
+          <h3 class="text-center">di</h3>
+          <div class="mt-4 logo-brand-text">
+            <img src="assets/images/text-arunika.png" alt="" />
+          </div>
+          <div class="logo-bu">
+            <img src="assets/images/logo-bu.png" alt="" />
+          </div>
+        </div>
       </div>
       <div class="form-container">
         <div class="form-header">
-          <a href="admin/index.html">
+          <a href="">
             <img src="assets/images/logo.png" alt="Arunika Corp" />
           </a>
-          <h1>Data Tamu</h1>
+          <h1>Data Pengunjung</h1>
         </div>
         <div class="form-list">
           <form id="guest-form">
@@ -34,25 +50,25 @@
                 type="text"
                 id="guest-name"
                 class="form-control"
-                placeholder="..."
+                placeholder="nama lengkap ..."
                 required
               />
             </div>
             <div class="mb-3">
               <label for="guest-gender" class="form-label">Gender :</label>
               <select name="" id="guest-gender" class="form-select" required>
-                <option>pilih gender</option>
+                <option value="">pilih gender</option>
                 <option value="Laki-Laki">Laki-Laki</option>
                 <option value="Perempuan">Perempuan</option>
               </select>
             </div>
             <div class="mb-3">
-              <label for="guest-position" class="form-label">Jabatan :</label>
+              <label for="guest-position" class="form-label">Pekerjaan :</label>
               <input
                 type="text"
                 id="guest-position"
                 class="form-control"
-                placeholder="..."
+                placeholder="karyawan / pelajar / ..."
                 required
               />
             </div>
@@ -62,7 +78,7 @@
                 id="guest-address"
                 rows="3"
                 class="form-control"
-                placeholder="..."
+                placeholder="alamat lengkap ..."
                 required
               ></textarea>
             </div>
@@ -85,7 +101,7 @@
                 type="email"
                 id="guest-email"
                 class="form-control"
-                placeholder="..."
+                placeholder="email aktif ..."
                 required
               />
             </div>
@@ -97,7 +113,7 @@
                 type="text"
                 id="guest-instansi"
                 class="form-control"
-                placeholder="..."
+                placeholder="PT. .... / Universitas ..."
                 required
               />
             </div>
